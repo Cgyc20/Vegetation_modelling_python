@@ -37,6 +37,7 @@ class model:
         #The upper diagonal
 
         DW[0,-1] = self.param[2]*self.delta_x**-1 #Boundary conditions.
+        DW[-1,0] = self.param[2]*self.delta_x**-1
 
         self.DU = DU
         self.DW = DW
